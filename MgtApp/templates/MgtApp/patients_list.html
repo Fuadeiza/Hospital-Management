@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{%block base_block%}
+<div class="container">
+<h2>This is a list of patients</h2>
+<div class="container-fluid">
+    <ol>
+        {% for patient in patients_list %}
+        <li><a href="{{patient.id}}"> {{patient.name}} </a> </li>
+        {%endfor%}
+    </ol>
+</div>
+
+</div>
+{%endblock%}

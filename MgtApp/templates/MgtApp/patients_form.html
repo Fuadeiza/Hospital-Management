@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{%block base_block%}
+<div class="container-fluid">  
+    <form  method="POST">
+        <h3>Create Patients profile here</h3>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class="btn btn-success" value="Create">
+    </form>
+</div>
+
+{%endblock%}

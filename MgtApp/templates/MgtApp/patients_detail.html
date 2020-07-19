@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{%block base_block%}
+<div class="container-fluid">
+    <h2>Below is a the information {{patients.name}}</h2>
+    <p>Patient Name : {{patients.name}}</p>
+    <p>Age : {{patients.age}}</p>
+    <p>Weight : {{patients.weight}}kg</p>
+    <p>Height : {{patients.height}}metres</p>
+    <h3><p>Diagnosis: </p></h3>
+    <h4>The patient named above is diagnosed with <b>{{patients.diagnosis}}</b> at {{patients.date_of_consultation}}</h4>
+
+</div>
+{%endblock%}
